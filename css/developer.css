@@ -1,0 +1,43 @@
+@charset "utf-8";
+/* CSS Document */
+#div1{
+	clear:both;
+	z-index:4;
+	border: 5px solid #00354d;
+	margin: auto;/*توسيط المعرض اي جعلة في نص الصفحة لايمين ولا يسار*/
+	position: relative;/*مهم */
+	/* 
+		مهم عشان المظهر جربي ووقفية راح تشوفي */
+	}
+#div2{
+	position:absolute;/*تعريف الصندوق الحاوي للصور من واعطاهة قيمة مطلقة */
+	/*مهم عشان نستخدمة بعدين في 
+	jquery 
+	animate()*/
+	
+	top:0;
+	z-index:5;}
+#div2 > a  img {
+	/*جعل الصور في وضعية تتابع احذفي الخاصية overflow في #div1 عشان تستوعبي اكثر*/}
+#div2 > div{
+	float:left;
+	position:relative;
+	z-index:10;}
+
+#next , #prev {
+	z-index:6;
+	width:10vh;
+	height:10vh;/* العرض والطول للازرار تحريك الصور والباقي تاثيرات اضافية*/
+	position:absolute;
+	top:50vh;
+	border-radius:50%;
+	cursor:pointer;}
+
+#next {
+	right:-25px;
+	background: url(img/icons-png/carat-r-white.png) left center no-repeat;}
+#prev {
+	left:-25px;
+	background: url(img/icons-png/carat-l-white.png) right center no-repeat;}
+#happy {
+

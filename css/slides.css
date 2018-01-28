@@ -1,0 +1,39 @@
+.slides {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 4000px;
+}
+.slide {
+  float: right !important;
+  height: 50vh;
+  background: rgba(0,0,0,0.5);
+  width: 1000px;
+  box-sizing: border-box !important;
+  padding: 0px;
+}
+.gallary-container {
+  position: relative;
+  overflow: hidden;
+  height: 50vh;
+  margin: auto;
+}
+#next, #prev {
+  position: absolute;
+  top: calc(25vh - 15.5px);
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer
+}
+#next {
+  left: 0;
+}
+#prev {
+  right: 0;
+}
+#next i, #prev i {
+  font-size: 25pt;
+}
